@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Team Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="heading">
+        <h1 id="title">Survey Form</h1>
+        <h3>Team Event</h3>
+        <div class="contact">
+          <h3>Contact Us</h3>
+      <form>
+        <p>
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Enter your Name" id="name" required>
+        </p>
+        <p>
+          <label>Email</label>
+          <input type="text" name="email" placeholder="Enter your email" id="email" required>
+        </p>
+        <p>
+          <label>Phone Number</label>
+          <input type="text" name="phone" placeholder="Enter your Phone Number" id="phone" required>
+        </p>
+        <div class="form-group">
+          <label class="left dropdown" for="dropdown">What kind of team player are you?</label>
+          <select class="right" id="dropdown" name="dropdown">
+               <option selected disabled >Select an option</option>
+               <option value="student" >Leader</option>
+               <option value="job" >2nd in command</option>
+               <option value="learner">Part time</option>
+               <option value="other">Other</option>
+             </select>
+        </div>
+        <div class="form-group">
+          <label class="left">Are you a team player?</label>
+          <div class="right">
+            <ul class="list">
+              <li><label><input type="radio" name ="recomedation" Value="1"> Definitly</label></li>
+              <li><label><input type="radio" name="recomedation" Value="2"> Maybe</label></li>
+              <li><label><input type="radio" name="recomedation" Value="3"> Not sure</label></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="right">Can you recruit people for our team?</label>
+          <div class="right">
+            <ul class="list">
+              <li><label><input type="radio" name ="recomedation" Value="1"> Definitly</label></li>
+              <li><label><input type="radio" name="recomedation" Value="2"> Maybe</label></li>
+              <li><label><input type="radio" name="recomedation" Value="3"> Not sure</label></li>
+            </ul>
+          </div>
+        </div>
+    
+        <p class="full">
+          <label>Message</label>
+          <textarea name="message" rows="5"></textarea
+        </p>
+        <p class="full">
+        <button id="submit">Submit</button>
+      </p>
+      </div>
+      </div>
+      </form>
+</div>
+</div>
+</body>
+</html>
